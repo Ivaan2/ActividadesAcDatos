@@ -5,19 +5,18 @@ import java.io.*;
 public class leerFicherosBytes {
 
     public static void main(String[] args) {
-        String file = "C:\\Users\\Alumno\\Downloads\\Matriculacion2DAM.png";
+        String file = "Archivos/Matriculacion2DAM.png";
         leerBytes(file);
 
     }
 
     private static void leerBytes(String file) {
         BufferedInputStream bin = null;
-        BufferedOutputStream bout = null;
         final int TAM = 1024 * 16;
 
         try {
             bin = new BufferedInputStream(new FileInputStream("filess/origen.jpg"));
-            bout = new BufferedOutputStream(new FileOutputStream("filess/destino.jpg"));
+
 
             int cantidadBytesLeidos = 0;
             byte[] buffer = new byte[TAM];
@@ -25,7 +24,7 @@ public class leerFicherosBytes {
 
             while((cantidadBytesLeidos = bin.read(buffer, 0 , TAM)) != -1) {
                 System.out.println("Leidos " + cantidadBytesLeidos + " Bytes en la interaci�n " + i++ + "-�sima");
-
+                System.out.println(cantidadBytesLeidos);
             }
 
 			/*

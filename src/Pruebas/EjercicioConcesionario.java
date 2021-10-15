@@ -49,15 +49,11 @@ public class EjercicioConcesionario {
                     String dia = atributos[2].substring(0,2);
                     String mes = atributos[2].substring(2,4);
                     String anno = atributos[2].substring(4,8);
-                    StringBuilder sb = new StringBuilder();
-                    sb.append(anno + "-" + mes + "-" + dia);
-                    String fecha = sb.toString();
                     Date date = new Date(Integer.valueOf(dia), Integer.valueOf(mes), Integer.valueOf(anno));
 
                     coche = new EjercicioConcesionario(atributos[0], atributos[1], date, Integer.parseInt(atributos[3]), Integer.parseInt(atributos[4]));
                     System.out.println(coche);
                 }
-
             }
         }catch (IOException e){
             e.printStackTrace();

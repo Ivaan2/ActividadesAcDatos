@@ -1,5 +1,5 @@
-Ford;Fiesta;01012010;83000;6000
-Seat;Leon;10022011;71500;8500
-Seat;Ibiza;28012009;123000;5500
-Volkswagen;Golf;14052012;8000;10000
-Ford;Focus;15092015;50000;9000
+EjercicioConcesionario{marca='Volkswagen', modelo='Golf', fMatriculacion=2012-05-14, kms=8000, precio=10000}
+EjercicioConcesionario{marca='Ford', modelo='Focus', fMatriculacion=2015-09-15, kms=50000, precio=9000}
+EjercicioConcesionario{marca='Seat', modelo='Leon', fMatriculacion=2011-02-10, kms=71500, precio=8500}
+EjercicioConcesionario{marca='Ford', modelo='Fiesta', fMatriculacion=2010-01-01, kms=83000, precio=6000}
+EjercicioConcesionario{marca='Seat', modelo='Ibiza', fMatriculacion=2009-01-28, kms=123000, precio=5500}
